@@ -1,11 +1,20 @@
 /**
  * #1 Hobbies
  * ----------
- * 1. Create an array of group member hobbies
- * 2. Write a loop that logs out each hobby
+ * 1. Create an array of group member hobbies - DONE
+ * 2. Write a loop that logs out each hobby - DONE
  * 3. After the loop, log out the total number of
- *    hobbies
+ *    hobbies - DONE
  */
+
+let hobbies = ['Skateboarding', 'Snowboarding', 'Traveling', 'Biking'];
+console.log('hobbies', hobbies);
+
+hobbies.forEach(hobby => {
+     console.log('hobbies', hobby);
+});
+
+console.log ('Total hobbies: ' + hobbies.length);0
 
 
 // Example output
@@ -13,6 +22,8 @@
 // 2. board games
 // 3. painting
 // Total hobbies: 3
+
+
 
 /**
  * #2 Colors
@@ -25,10 +36,17 @@
  * 4. Output the array and number of times teal was found
  */
 
+const colors = ['black', 'teal', 'baby blue', 'lime green'];
+console.log(colors);
+
+const tealCount = colors.filter(color => color === 'teal').length;
+
+console.log('Number of times that teal was found:', tealCount);
 
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
+
 
 
 /**
@@ -41,11 +59,32 @@
  * 4. Output the original array, odd number array and even number array
  */
 
+const numbers = [1, 3, 22, 36, 43, 90];
+console.log(numbers);
+
+const oddNumbers = [];
+const evenNumbers = [];
+
+console.log('Odd Numbers', oddNumbers);
+console.log('Even Numbers', evenNumbers);
+
+for (const number of numbers) {
+     if (number % 2 === 0) {
+          evenNumbers.push(number);
+     } else {
+          oddNumbers.push(number);
+     }
+}
+
+
+
+
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
+
 
 
 /**
@@ -57,10 +96,29 @@
  * 4. Output both arrays
  */
 
+const boolArray = [true, true, true, false, true, false];
+console.log(boolArray);
+
+let toggledArray = [];
+
+for (const value of boolArray) {
+     toggledArray.push(!value);
+}
+
+console.log('Toggled', toggledArray);
+
+
 
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
+
+
+
+
+
+
+
 
 
 /**
