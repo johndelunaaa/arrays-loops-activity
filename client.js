@@ -11,7 +11,7 @@ let hobbies = ['Skateboarding', 'Snowboarding', 'Traveling', 'Biking'];
 console.log('hobbies', hobbies);
 
 hobbies.forEach(hobby => {
-     console.log('hobbies', hobby);
+     console.log('', hobby);
 });
 
 console.log ('Total hobbies: ' + hobbies.length);0
@@ -36,12 +36,12 @@ console.log ('Total hobbies: ' + hobbies.length);0
  * 4. Output the array and number of times teal was found
  */
 
-const colors = ['black', 'teal', 'baby blue', 'lime green'];
-console.log(colors);
+const colors = ['black', 'teal', 'baby blue', 'teal', 'lime green'];
+console.log('Colors', colors);
 
 const tealCount = colors.filter(color => color === 'teal').length;
 
-console.log('Number of times that teal was found:', tealCount);
+console.log('Teal was found', tealCount, 'times');
 
 // Example output
 // green, red, teal, orange, teal
@@ -65,8 +65,8 @@ console.log(numbers);
 const oddNumbers = [];
 const evenNumbers = [];
 
-console.log('Odd Numbers', oddNumbers);
-console.log('Even Numbers', evenNumbers);
+console.log('Odd', oddNumbers);
+console.log('Even', evenNumbers);
 
 for (const number of numbers) {
      if (number % 2 === 0) {
